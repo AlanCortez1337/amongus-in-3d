@@ -5,6 +5,18 @@
   position: absolute;
 }
 
+.loading {
+  position: absolute;
+  left: calc(50% - 150px);
+  top: calc(50% - 37.5px);
+  width: 300px;
+  height: 75px;
+  text-align: center;
+  background-color: #232323;
+  border-radius: 25px;
+  padding: 25px;
+}
+
 .title {
   position: absolute;
   left: calc(50% - 250px);
