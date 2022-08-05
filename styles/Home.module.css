@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
 .amongus {
   width: 100vw;
   height: 100vh;
@@ -12,9 +13,6 @@
   width: 300px;
   height: 75px;
   text-align: center;
-  background-color: #232323;
-  border-radius: 25px;
-  padding: 25px;
 }
 
 .title {
@@ -37,21 +35,23 @@
 }
 
 @media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+  .title {
+    position: absolute;
+    left: calc(50% - 150px);
+    background-color: #232323;
+    width: 300px;
+    height: 75px;
+    border-radius: 0 0 45px 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title h1 {
+    font-family: 'Secular One', sans-serif;
+    margin: 0;
+    font-weight: 700;
+    font-size: 28px;
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
-  }
-}
